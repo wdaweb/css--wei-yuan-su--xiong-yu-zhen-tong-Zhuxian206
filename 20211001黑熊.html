@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      /* top: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%); */
+      width: 200px;
+      height: 200px;
+      background: black;
+      border-radius: 200px;
+    }
+
+    .main::before {
+      content: "";
+      position: absolute;
+      left: 10%;
+      width: 30px;
+      height: 30px;
+      border-radius: 40px;
+      background: rgb(0, 0, 0);
+    }
+
+    .main::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 10%;
+      width: 30px;
+      height: 30px;
+      border-radius: 40px;
+      background: rgb(0, 0, 0);
+    }
+
+    .nose {
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+      height: 60px;
+      border-radius: 120px / 80px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .nose::before {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -25%);
+      border-radius: 115px / 55px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    .nose::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 60px / 30px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    .eyes1 {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: rgb(255, 255, 255);
+      border-radius: 200px;
+      top: 18%;
+      left: 18%;
+
+    }
+
+    .eyes1::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: rgb(255, 255, 255);
+      border-radius: 200px;
+      top: 0%;
+      left: 215%;
+    }
+
+    .eyes2 {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: rgb(0, 0, 0);
+      border-radius: 200px;
+      top: 20.5%;
+      left: 20.5%;
+    }
+
+    .eyes2::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: rgb(0, 0, 0);
+      border-radius: 200px;
+      left: 288%;
+    }
+
+    .face {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .face::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: red;
+      border-radius: 50%;
+      top: 35%;
+      left: -5%;
+    }
+
+    .face::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: red;
+      border-radius: 50%;
+      top: 35%;
+      right: -5%;
+    }
+
+    .ears {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+
+    .ears::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      top: 2%;
+      left: 12.5%;
+    }
+
+    .ears::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      top: 2%;
+      right: 12.5%;
+      z-index: +1;
+    }
+
+    .liiz {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .liiz::before {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 30px;
+      background: rgb(255, 255, 255);
+      transform: skew(45deg) translateX(-115%);
+      bottom: 10%;
+      left: 50%;
+    }
+
+    .liiz::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 30px;
+      background: rgb(255, 255, 255);
+      transform: skew(135deg) translateX(115%);
+      bottom: 10%;
+      right: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="nose"></div>
+    <div class="eyes1"></div>
+    <div class="eyes2"></div>
+    <div class="face"></div>
+    <div class="ears"></div>
+    <div class="liiz"></div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
